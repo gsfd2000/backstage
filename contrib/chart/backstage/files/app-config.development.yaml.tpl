@@ -17,19 +17,19 @@ catalog:
 {{- if .Values.backend.demoData }}
   locations:
     # Backstage example components
-    - type: url
+    - type: github
       target: https://github.com/gsfd2000/backstage/blob/master/packages/catalog-model/examples/all-components.yaml
     # Example component for github-actions
-    - type: url
+    - type: github
       target: https://github.com/gsfd2000/backstage/blob/master/plugins/github-actions/examples/sample.yaml
     # Example component for techdocs
-    - type: url
+    - type: github
       target: https://github.com/gsfd2000/backstage/blob/master/plugins/techdocs-backend/examples/documented-component/documented-component.yaml
     # Backstage example APIs
-    - type: url
+    - type: github
       target: https://github.com/gsfd2000/backstage/blob/master/packages/catalog-model/examples/all-apis.yaml
     # Backstage example templates
-    - type: url
+    - type: github
       target: https://github.com/gsfd2000/backstage/blob/master/plugins/scaffolder-backend/sample-templates/all-templates.yaml
 {{- else }}
   locations: []
